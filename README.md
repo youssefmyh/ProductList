@@ -31,3 +31,14 @@ https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
 
 
 # Profiling screen shots to show how i am tracking the Memory Leaks
+
+# Screen shots 
+
+![alt List](https://github.com/youssefmyh/ProductList/blob/main/1.png)
+
+![alt List](https://github.com/youssefmyh/ProductList/blob/main/2.png)
+
+
+![alt List](https://github.com/youssefmyh/ProductList/blob/main/products2.mov)
+
+
