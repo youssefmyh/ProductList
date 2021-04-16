@@ -4,7 +4,7 @@ Loading Product List
 
 # Design Pattern
 
-MVVM for more details pleae check 
+MVVM for more details Please check
 
 https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel
 
