@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProductCollectionViewCell" customModule="ProductList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uc3-C5-CAx">
+                    <rect key="frame" x="0.0" y="44" width="150" height="106"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uSa-Cm-6qz">
+                    <rect key="frame" x="113" y="116" width="37" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="cKn-je-Phs"/>
+                        <constraint firstAttribute="height" constant="34" id="wD9-Ut-zCy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" systemColor="systemPurpleColor"/>
+                    </state>
+                    <state key="selected">
+                        <color key="titleColor" systemColor="systemRedColor"/>
+                    </state>
+                    <connections>
+                        <action selector="addItemToBasket:" destination="iN0-l3-epB" eventType="touchUpInside" id="ApQ-Gv-3Jf"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jvR-4h-254">
+                    <rect key="frame" x="0.0" y="1" width="150" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="Foa-tp-GvH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="uc3-C5-CAx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4ds-dI-q4h"/>
+                <constraint firstAttribute="trailing" secondItem="jvR-4h-254" secondAttribute="trailing" id="Xbf-Mt-jsT"/>
+                <constraint firstItem="jvR-4h-254" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZLI-HU-d2I"/>
+                <constraint firstItem="uSa-Cm-6qz" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="bpn-EF-WBP"/>
+                <constraint firstItem="uc3-C5-CAx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="cJU-il-mx3"/>
+                <constraint firstItem="uc3-C5-CAx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="lrq-ck-7hx"/>
+                <constraint firstItem="jvR-4h-254" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="1" id="mqW-2A-3S3"/>
+                <constraint firstItem="uc3-C5-CAx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="t5n-p7-kOE"/>
+                <constraint firstItem="uSa-Cm-6qz" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="twQ-oB-jzz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="productImage" destination="uc3-C5-CAx" id="vEp-dc-bmK"/>
+                <outlet property="productName" destination="jvR-4h-254" id="23R-ZR-kxd"/>
+            </connections>
+            <point key="canvasLocation" x="-162.31884057971016" y="-290.625"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
